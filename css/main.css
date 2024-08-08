@@ -1,0 +1,541 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+body{
+    background-image: linear-gradient(to top, #FF6813 0%, #121212 100%);
+    color: #FF6813;
+    font-family: "Jua", sans-serif;
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+a{text-decoration: none;}
+li{list-style: none;}
+button{background: none;border: none;cursor: pointer;font-family: "Jua", sans-serif;}
+/* 커서 */
+.cursor{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #FF6813;
+    border-radius: 100%;
+    z-index: 10000000;
+}
+header{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 200px 0 50px;
+    z-index: 10;
+    /* border: 1px solid blue; */
+}
+header .header_wrap{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+}
+header .header_wrap .btn_menu{
+    width: 48px;
+    height: 40px;
+    background: url('../images/logo.png')no-repeat;
+    background-size: 48px;
+    position: absolute;
+    right: 50px;
+    top: 38%;
+    transform: translateY(-50%);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+header .header_wrap .btn_menu.on{
+    background: url('../images/logo_change.png')no-repeat;
+    background-size: 48px;
+    cursor: pointer;
+}
+header .header_wrap .gnb{
+    position: absolute;
+    right: -100%;
+    top: 38%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 30px;
+    transition: all 0.3s ease-in-out;
+}
+header .header_wrap .gnb li a{
+    color: #fff;
+    opacity: 0.5;
+}
+header .header_wrap .gnb.on{
+    right: 120px;
+}
+header .header_wrap .gnb.on li a{
+    color: #fff;
+    opacity: 0.5;
+    font-size: 24px;
+}
+header .header_wrap .gnb.on li:hover a{
+    opacity: 1;
+}
+/* 배경 fullpages */
+#fullpage .section{
+    font-size: 48px;
+    color: #FF6813;
+    font-weight: bold;
+    text-align: left;
+    padding: 0 50px;
+}
+/* inner 섹션 */
+.section .inner{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+/* 공통 inner의 상단제목 스타일 */
+.section .inner h1{
+    font-size: 60px;
+    color: #FF6813;
+    opacity: 1;
+    margin-top: 40px;
+    /* border: 1px solid #ddd; */
+}
+/* section0---------------------- */
+#section0{
+    position: relative;
+}
+#section0 .inner{
+    width: 100%;
+}
+#section0 .title{
+    width: 1000px;
+    position: absolute;
+    background-size: 1262px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 50;
+}
+#section0 .title h2,
+#section0 .title h3{
+    text-align: center;
+}
+#section0 .title h2{
+    font-size: 140px;
+}
+#section0 .title h2 span,
+#section0 .title h3 span{
+    color: #fff;
+}
+/* 알파벳 I 위에서 뛰는 놈 */
+#section0 .title>span.dot{
+    width: 20px;
+    height: 20px;
+    border-radius: 999px;
+    position: absolute;
+    right: 243px;
+    top: 50px;
+    background: #fff;
+    animation: dot_ani 0.5s ease-in-out infinite;
+}
+@keyframes dot_ani {
+    0%{top: 50px;right: 243px;}
+    50%{top: 30px;right: 250px;width: 10px;}
+    100%{top: 50px;right: 243px;}
+}
+/* scroll down key */
+#section0 .title>a span.scroll{
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+    color: #FF6813;
+    background: #222;
+    position: absolute;
+    left: 50%;
+    bottom: -220px;
+    transform: translateX(-50%);
+    animation: scroll_ani 1s ease-in-out infinite;
+}
+@keyframes scroll_ani {
+    0%{bottom: -220px;}
+    50%{bottom: -280px;}
+    100%{bottom: -220px;}
+}
+/* section1---------------------- */
+#section1 .inner{
+    position: relative;
+}
+#fp-nav ul li a span,#fp-nav ul li:hover a span,.fp-slidesNav ul li:hover a span{
+    background: #fff;
+}
+/* sec1_contents */
+#section1 .inner .sec1_contents{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    color: #fff;
+    border-top: 2px solid #FF6813;
+}
+/* 왼쪽 프로필박스 */
+#section1 .inner .left{
+    width: 646px;
+    height: 100%;
+    padding: 160px 0 0;
+    text-align: center;
+}
+#section1 .inner .left .photo{
+    width: 320px;
+    height: 320px;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+#section1 .inner .left .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+/* contact */
+#section1 .inner .left .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 50px auto 0;
+    text-align: left;
+    width: 350px;
+}
+#section1 .inner .left .contact li{
+    font-size: 30px;
+}
+#section1 .inner .left .contact li .fa-user,
+#section1 .inner .left .contact li .fa-cake-candles,
+#section1 .inner .left .contact li .fa-phone,
+#section1 .inner .left .contact li .fa-envelope{
+    width: 36px;
+    margin-right: 10px;
+}
+/* 오른쪽 박스 */
+#section1 .inner .right{
+    width: 1100px;
+    height: 800px;
+}
+/* experience 위 */
+#section1 .inner .right .right_top{
+    display: flex;
+}
+#section1 .inner .right .experience,
+#section1 .inner .right .career{
+    border-bottom: 2px solid #FF6813;
+}
+#section1 .inner .right .experience,
+#section1 .inner .right .career,
+#section1 .inner .right .skills{
+    width: 100%;
+    padding: 30px;
+    border-left: 2px solid #FF6813;
+}
+#section1 .inner .right .experience h3,
+#section1 .inner .right .career h3,
+#section1 .inner .right .skills h3{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#section1 .inner .right .ezen li{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+#section1 .inner .right .ezen li:nth-child(2),
+#section1 .inner .right .ezen li:nth-child(4),
+#section1 .inner .right .ezen li:last-child{
+    font-family: 'Noto Sans',sans-serif;
+    font-size: 18px;
+    margin-bottom: 14px;
+    letter-spacing: -0.8px;
+}
+/* career */
+#section1 .inner .right .career>.ezen li{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#section1 .inner .right .career>.ezen li span{
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    
+}
+#section1 .inner .right .career>.ezen li span img{
+    width: 100%;
+    height: 100%;
+}
+/* skills 아래 */
+#section1 .inner .right .skills .subjects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* border: 1px solid #fff; */
+}
+/* 그래프 */
+#section1 .inner .right .skills .subjects li{
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+/* 항목이름들 */
+#section1 .inner .right .skills .subjects li .title{
+    text-align: right;
+    width: 132px;
+}
+/* 게이지 칸ggaze */
+#section1 .inner .right .skills .subjects li .ggaze{
+    width: 700px;
+    height: 18px;
+    background: rgba(255,255,255,0.5);
+    position: relative;
+}
+/* 게이지 칸 늘어나는 부분gazeins */
+#section1 .inner .right .skills .subjects li .gazeins{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 18px;
+    background: #222;
+}
+/* 퍼센트 */
+#section1 .inner .right .skills .subjects li .perc{
+    width: 56px;
+}
+
+/* section2---------------------- */
+/* 전체 컨텐츠 박스(탭버튼,갤러리) */
+#section2 .sec2_contents{
+    width: 1200px;
+    display: flex;
+    margin: 100px auto 0;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+/* 그래픽스 갤러리 */
+#section2 .sec2_contents .tab_content{
+    width: 1000px;
+}
+
+/* 처음엔 보이지 않아야 함 */
+#section2 .sec2_contents .tab_content .uiuxbox{
+    display: none;
+}
+#section2 .sec2_contents .tab_content .graphic,
+#section2 .sec2_contents .tab_content .web{
+    width: 1000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#section2 .sec2_contents .tab_content .graphic li,
+#section2 .sec2_contents .tab_content .web li{
+    width: 320px;
+    height: 320px;
+}
+/* 갤러리들 이미지 박스 크기 */
+#section2 .sec2_contents .tab_content .graphic li .imgbox,
+#section2 .sec2_contents .tab_content .web li .imgbox{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+#section2 .sec2_contents .tab_content .graphic li .imgbox img,
+#section2 .sec2_contents .tab_content .web li .imgbox img{
+    width: 100%;
+    height: 100%;
+}
+/* 탭메뉴 */
+#section2 .sec2_contents .tab_menu{
+    width: 130px;
+}
+#section2 .sec2_contents .tab_menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#section2 .sec2_contents .tab_menu ul li{
+    width: 130px;
+    height: 80px;
+    text-align: center;
+    border-radius: 20px;
+    background: #666;
+}
+#section2 .sec2_contents .tab_menu ul li a{
+    font-size: 24px;
+    line-height: 80px;
+    color: #fff;
+}
+#section2 .sec2_contents .tab_menu ul li.on{
+    background: #FF6813;
+}
+
+
+/* section3x------------------------------- */
+#section3 .inner div img{
+    width: 1428px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+/* section4x------------------------------- */
+#section4 .inner div img{
+    width: 1170px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+/* section5---------------------- */
+#section5{
+    position: relative;
+}
+#section5 .inner .footer_info{
+    width: 1350px;
+    /* border: 1px solid #FF6813; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    position: relative;
+}
+/* sns links */
+#section5 .inner .footer_info .f_wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    color: #fff;
+}
+#section5 .inner .footer_info .f_wrap li a{
+    font-size: 42px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+#section5 .inner .footer_info .f_wrap li:hover a{
+    color: #FF6813;
+    text-decoration: underline;
+    margin-bottom: 5px;
+
+}
+#section5 .inner .footer_info .f_wrap li .fa-instagram,
+#section5 .inner .footer_info .f_wrap li .fa-twitter,
+#section5 .inner .footer_info .f_wrap li .fa-blog,
+#section5 .inner .footer_info .f_wrap .f_mailtalk li .fa-envelope{
+    margin-right: 20px;
+    width: 40px;
+}
+/* mail / talk id */
+#section5 .inner .footer_info .f_wrap .f_mailtalk li{
+    font-size: 36px;
+}
+#section5 .inner .footer_info .f_wrap p{
+    font-size: 28px;
+}
+
+/* work together */
+#section5 .inner .footer_info .f_title h3{
+    text-align: right;
+    font-size: 140px;
+    position: relative;
+}
+#section5 .inner .footer_info .f_title h3 span.o1{
+    color: #fff;
+    position: absolute;
+    right: 160px;
+    top: 0;
+    transform: translateY(-50%);
+    animation: circle_ani2 1.2s ease-in-out infinite;
+}
+#section5 .inner .footer_info .f_title h3 span.o2{
+    color: #fff;
+    position: absolute;
+    left: 82px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: circle_ani 1.2s ease-in-out infinite;
+}
+#section5 .inner .footer_info .f_title h3 span.o3{
+    color: #fff;
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: circle_ani 1.2s ease-in-out infinite;
+}
+@keyframes circle_ani{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(45deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(-45deg);}
+    100%{transform: rotate(0deg);}
+}
+@keyframes circle_ani2{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(-45deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(45deg);}
+    100%{transform: rotate(0deg);}
+}
+/* 바로가기 버튼들 */
+#section5 .inner .f_btn_wrap{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 648px;
+    text-align: right;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+#section5 .inner .f_btn_wrap button{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background: #fff;
+    font-size: 36px;
+}
+
+/* 주메뉴----------------------------- */
+nav{
+    position: fixed;
+    top: 30px;
+    right: 100px;
+    z-index: 9;
+    transform: translateX(200px);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+nav ul{
+    display: flex;
+    gap: 50px;
+}
+nav ul li a{
+    color: rgba(255,255,255,0.6);
+    font-weight: bold;
+}
+/* on class nav */
+nav.on{
+    opacity: 1;
+    transform: translateX(0);
+}
+
