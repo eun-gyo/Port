@@ -11,12 +11,12 @@ $(function(){
     // 로고 클릭시 토글
     $('.btn_menu').on('click',function(){
         $('.gnb').toggleClass('on')
-        this.toggleClass('on')
+        $(this).toggleClass('on')
     })
 // 버튼을 누르면 탭 화면 전환
     $('.tab_btn li').on('click',function(){
         $('li.on').removeClass('on')
-        $(this).addClass('on').find('.tab_content div').show()
+        $(this).addClass('on')
     })
 
 })
@@ -82,7 +82,7 @@ function sec1_in(){
         })
         .add({
             targets: '.g4',
-            width : '90%',
+            width : '95%',
         })
         .add({
             targets: '.g5',
@@ -90,7 +90,7 @@ function sec1_in(){
         })
         .add({
             targets: '.g6',
-            width : '75%',
+            width : '80%',
         })
         .add({
             targets: '.g7',

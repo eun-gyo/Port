@@ -1,9 +1,9 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 body{
-    background-image: linear-gradient(to top, #FF6813 0%, #121212 100%);
     color: #FF6813;
     font-family: "Jua", sans-serif;
+    background: #121212;
 }
 *{margin: 0;padding: 0;box-sizing: border-box;}
 a{text-decoration: none;}
@@ -150,8 +150,8 @@ header .header_wrap .gnb.on li:hover a{
     display: block;
     padding: 20px;
     border-radius: 20px;
-    color: #FF6813;
-    background: #222;
+    color: #121212;
+    background: #FF6813;
     position: absolute;
     left: 50%;
     bottom: -220px;
@@ -219,6 +219,7 @@ header .header_wrap .gnb.on li:hover a{
 #section1 .inner .right{
     width: 1100px;
     height: 800px;
+    font-family: 'Noto Sans',sans-serif;
 }
 /* experience 위 */
 #section1 .inner .right .right_top{
@@ -246,27 +247,30 @@ header .header_wrap .gnb.on li:hover a{
     flex-direction: column;
     gap: 8px;
     font-size: 24px;
-    letter-spacing: 3px;
 }
-#section1 .inner .right .ezen li:nth-child(2),
-#section1 .inner .right .ezen li:nth-child(4),
-#section1 .inner .right .ezen li:last-child{
+#section1 .inner .right .experience li:nth-child(2),
+#section1 .inner .right .experience li:nth-child(4),
+#section1 .inner .right .experience li:last-child{
     font-family: 'Noto Sans',sans-serif;
     font-size: 18px;
     margin-bottom: 14px;
-    letter-spacing: -0.8px;
 }
 /* career */
-#section1 .inner .right .career>.ezen li{
+#section1 .inner .right .career li{
     display:flex;
     flex-direction: row;
     gap: 10px;
+    font-size: 18px;
+}
+/* 직무 아이콘들 */
+/* 이미지 li는 mtop주기 */
+#section1 .inner .right .career>.ezen li:last-child{
+    margin-top: 20px;
 }
 #section1 .inner .right .career>.ezen li span{
     width: 80px;
     height: 80px;
     margin-top: 20px;
-    
 }
 #section1 .inner .right .career>.ezen li span img{
     width: 100%;
@@ -297,7 +301,7 @@ header .header_wrap .gnb.on li:hover a{
 #section1 .inner .right .skills .subjects li .ggaze{
     width: 700px;
     height: 18px;
-    background: rgba(255,255,255,0.5);
+    background: #333;
     position: relative;
 }
 /* 게이지 칸 늘어나는 부분gazeins */
@@ -308,13 +312,12 @@ header .header_wrap .gnb.on li:hover a{
     transform: translateY(-50%);
     width: 0;
     height: 18px;
-    background: #222;
+    background: #FF6813;
 }
 /* 퍼센트 */
 #section1 .inner .right .skills .subjects li .perc{
     width: 56px;
 }
-
 /* section2---------------------- */
 /* 전체 컨텐츠 박스(탭버튼,갤러리) */
 #section2 .sec2_contents{
@@ -354,7 +357,7 @@ header .header_wrap .gnb.on li:hover a{
 #section2 .sec2_contents .tab_content .web li .imgbox{
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(255,255,255,0.1);
 }
 #section2 .sec2_contents .tab_content .graphic li .imgbox img,
 #section2 .sec2_contents .tab_content .web li .imgbox img{
@@ -385,6 +388,7 @@ header .header_wrap .gnb.on li:hover a{
 #section2 .sec2_contents .tab_menu ul li.on{
     background: #FF6813;
 }
+
 
 
 /* section3x------------------------------- */
