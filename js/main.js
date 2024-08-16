@@ -1,3 +1,4 @@
+// 마우스 따라다니는 원
 document.addEventListener('mousemove', (e) => {
     let mouseX = e.pageX - 2; // document의 x좌표값
     let mouseY = e.pageY - 3; // document의 y좌표값
@@ -7,6 +8,7 @@ document.addEventListener('mousemove', (e) => {
     cursor.style.top = mouseY + 'px';
 })
 
+// gnb 로고 액팅
 $(function(){
     // 로고 클릭시 토글
     $('.btn_menu').on('click',function(){
@@ -15,12 +17,21 @@ $(function(){
     })
 // 버튼을 누르면 탭 화면 전환
     $('.tab_btn li').on('click',function(){
-        $('li.on').removeClass('on')
+        let num = $(this).index()
+        $('.tab_btn li').removeClass('on')
         $(this).addClass('on')
+
+
+        // 기존클릭된 애는 숨기기(갤러리)
+        $('.box').hide()
+        // list 따라서 보여주기
+        $('.box').eq(num).show()
+        
     })
 
 })
 
+// 전체 페이지 액팅
 new fullpage('#fullpage', {
 	//options here
 	autoScrolling:true,
@@ -56,6 +67,7 @@ new fullpage('#fullpage', {
         }
     }
 });
+
 // portfolio
 function sec0_in(){
     // alert("서은교의 포트폴리오 페이지 입니다")
@@ -64,7 +76,7 @@ function sec0_in(){
 function sec1_in(){
         let tl = anime.timeline({
             easing: 'linear',
-            duration: 300
+            duration: 500
         });
     
         tl.add({
