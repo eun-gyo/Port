@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
     <!-- fontawsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -22,8 +24,10 @@
                 <li><a href="#num0">My Page</a></li>
                 <li><a href="#num1">About</a></li>
                 <li><a href="#num2">Project</a></li>
-                <li><a href="#num3">Web Publishing</a></li>
-                <li><a href="#num4">Mobile Web</a></li>
+                <li><a href="#num3">Responsible Web</a></li>
+                <li><a href="#num4">Web Publishing1</a></li>
+                <li><a href="#num41">Web Publishing2</a></li>
+                <li><a href="#num42">Web Publishing3</a></li>
                 <li><a href="#num5">Contact</a></li>
             </ul>
             <!-- 메뉴버튼 -->
@@ -38,11 +42,13 @@
             <li><a href="#num2"></a></li>
             <li><a href="#num3"></a></li>
             <li><a href="#num4"></a></li>
+            <li><a href="#num41"></a></li>
+            <li><a href="#num42"></a></li>
             <li><a href="#num5"></a></li>
         </ul>
     </nav>
     <!-- 주메뉴 -->
-    <nav>
+    <!-- <nav>
         <ul>
             <li><a href="#num0">My Page</a></li>
             <li><a href="#num1">About</a></li>
@@ -50,7 +56,7 @@
             <li><a href="#num3">Gallery</a></li>
             <li><a href="#num4">Contact</a></li>
         </ul>
-    </nav>
+    </nav> -->
     <!-- 배경 -->
     <div id="fullpage">
         <div id="section0" class="section">
@@ -258,8 +264,9 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./images/thumbnail04.jpg" data-fancybox="gallery" data-caption="여름특가 할인행사 배너">
                                         <div class="imgbox">
+                                            <img src="./images/thumbnail04.jpg" alt="여름맞이해피세일">
                                         </div>
                                     </a>
                                 </li>
@@ -275,9 +282,9 @@
                         <div class="box box2">
                             <ul class="web">
                                 <li>
-                                    <a href="./images/thumbnail03.png" data-fancybox="gallery" data-caption="여름특가 할인행사 배너">
+                                    <a href="./images/thumbnail04.png" data-fancybox="gallery" data-caption="여름특가 할인행사 배너">
                                         <div class="imgbox">
-                                            <img src="./images/thumbnail01.jpg" alt="uiux1">
+                                            <img src="./images/thumbnail04.jpg" alt="uiux1">
                                         </div>
                                     </a>
                                 </li>
@@ -326,17 +333,105 @@
         </div>
         <div id="section3" class="section">
             <div class="inner">
-                <h1>Web Publishing</h1>
-                <div>
-                    <img src="./images/webimage.png" alt="웹코딩전이미지시안">
+                <h1>Responsible Web</h1>
+                <!-- slick slider -->
+                <div class="slider">
+                    <div>
+                        <div class="content">
+                            <div class="sec3_left_wrap">
+                                <a href="#">
+                                    <img onclick="window.open('http://eungyo12345.dothome.co.kr/07_lafuma/index.html')" src="./images/lafuma_left.png" alt="라푸마코딩이미지">
+                                </a>
+                            </div>
+                            <div class="sec3_right_wrap">
+                                <ul class="script">
+                                    <li>Project / Lafuma</li>
+                                    <li>Work / 라푸마 반응형 웹 디자인</li>
+                                    <li>Program / HTML5 CSS3 Javascript Jquery Photoshop Figma</li>
+                                    <li>Time / 50 hours</li>
+                                    <li><span>100% personal work</span></li>
+                                </ul>
+                                <div class="sec3_btn">
+                                    <button onclick="window.open('http://eungyo12345.dothome.co.kr/07_lafuma/index.html')">PC<i class="fa-solid fa-arrow-right"></i></button>
+                                    <button onclick="window.open('http://eungyo12345.dothome.co.kr/07_lafuma/index.html','popup1','width=430px,height=900px')">Mobile<i class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="content">
+                            <div class="sec3_left_wrap">
+                                <a href="#">
+                                    <img onclick="window.open('http://eungyo12345.dothome.co.kr/07_lafuma/index.html')" src="./images/lafuma_left.png" alt="라푸마코딩이미지">
+                                </a>
+                            </div>
+                            <div class="sec3_right_wrap">
+                                <ul class="script">
+                                    <li>Project / Netflix</li>
+                                    <li>Work / 넷플릭스 반응형 웹 디자인</li>
+                                    <li>Program / HTML5 CSS3 Javascript Jquery</li>
+                                    <li>Time / 48 hours</li>
+                                    <li><span class="two">100% personal work</span></li>
+                                </ul>
+                                <div class="sec3_btn">
+                                    <button class="twob" onclick="window.open('http://eungyo12345.dothome.co.kr/07_lafuma/index.html')">PC<i class="fa-solid fa-arrow-right"></i></button>
+                                    <button class="twob" onclick="window.open('http://eungyo12345.dothome.co.kr/07_lafuma/index.html','popup1','width=430px,height=900px')">Mobile<i class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div>
+                        <div class="content">
+                            <div class="sec3_left_wrap">
+                                <a href="#">
+                                    <img onclick="window.open('http://eungyo12345.dothome.co.kr/07_lafuma/index.html')" src="./images/lafuma_left.png" alt="라푸마코딩이미지">
+                                </a>
+                            </div>
+                            <div class="sec3_right_wrap">
+                                <ul class="script">
+                                    <li>Project / Lafuma</li>
+                                    <li>Work / 라푸마 반응형 웹 디자인</li>
+                                    <li>Program / HTML5 CSS3 Javascript Jquery Photoshop Figma</li>
+                                    <li>Time / 52 hours</li>
+                                    <li><span>100% personal work</span></li>
+                                </ul>
+                                <div class="sec3_btn">
+                                    <button onclick="window.open('http://eungyo12345.dothome.co.kr/07_lafuma/index.html')">PC<i class="fa-solid fa-arrow-right"></i></button>
+                                    <button onclick="window.open('http://eungyo12345.dothome.co.kr/07_lafuma/index.html','popup1','width=430px,height=900px')">Mobile<i class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
         <div id="section4" class="section">
             <div class="inner">
-                <h1>Mobile Web</h1>
+                <h1>Web Publishing 1</h1>
                 <div>
-                    <img src="./images/mobileimage.png" alt="모바일웹코딩전이미지시안">
+                    <p>
+                        1. tmdb
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="section41" class="section">
+            <div class="inner">
+                <h1>Web Publishing 2</h1>
+                <div>
+                    <p>
+                        2. musinsa
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="section42" class="section">
+            <div class="inner">
+                <h1>Web Publishing 3</h1>
+                <div>
+                    <p>
+                        3. 하나더 하고 자동슬라이드로 구현하기
+                    </p>
                 </div>
             </div>
         </div>
@@ -346,37 +441,19 @@
                 <div class="footer_info">
                     <!-- conect links -->
                     <div class="f_wrap">
-                        <ul class="f_snslink">
-                            <li>
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <i class="fa-brands fa-instagram"></i>Instagram
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://x.com/?lang=ko" target="_blank">
-                                    <i class="fa-brands fa-twitter"></i>Twitter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://blog.naver.com/eungyo123" target="_blank">
-                                    <i class="fa-solid fa-blog"></i>Naver Blog
-                                </a>
-                            </li>
-                        </ul>
+                        <h4>
+                            방문해 주셔서 감사합니다.
+                        </h4>
                         <ul class="f_mailtalk">
                             <li><i class="fa-regular fa-envelope"></i>eungyo123@naver.com</li>
-                            <li><span>Kakao Id /</span> icode9246</li>
+                            <li><i class="fa-solid fa-square-phone"></i>82+ 10-7739-6505</li>
                         </ul>
                         <p>Seo-Eungyo Portfolio 2024</p>
                     </div>
-                    <div class="f_title">
-                        <!-- work together -->
-                        <h3>W&nbsp;&nbsp;<span class="o1">O</span>RK<br>T&nbsp;&nbsp;<span class="o2">O</span>GETHER <span class="o3">!</span></h3>
-                    </div>
                     <div class="f_btn_wrap">
-                        <a href="#num2"><button>Project</button></a>
-                        <a href="#num3"><button>PC Web</button></a>
-                        <a href="#num4"><button>Mobile</button></a>
+                        <button><a href="#num2">Project</a></button>
+                        <button><a href="#num3">RWD</a></button>
+                        <button><a href="#num4">Web Pub</a></button>
                     </div>
                 </div>
             </div>
@@ -394,6 +471,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <!-- fontawsome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+    <!-- slick slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

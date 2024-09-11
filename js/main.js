@@ -15,7 +15,8 @@ $(function(){
         $('.gnb').toggleClass('on')
         $(this).toggleClass('on')
     })
-// 버튼을 누르면 탭 화면 전환
+    // sec2
+    // 버튼을 누르면 탭 화면 전환
     $('.tab_btn li').on('click',function(){
         let num = $(this).index()
         $('.tab_btn li').removeClass('on')
@@ -28,6 +29,14 @@ $(function(){
         $('.box').eq(num).show()
         
     })
+
+
+    // 웹퍼블리싱(slide)
+    $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+    })
+    
 
 })
 
@@ -42,10 +51,10 @@ new fullpage('#fullpage', {
     // 네비게이터 위치
     navigationPosition: 'right',
     // 하이퍼링크
-    anchors:['num0','num1','num2','num3','num4','num5'],
+    anchors:['num0','num1','num2','num3','num4','num41','num42','num5'],
 
 
-
+    // 화면안에 들어왔을때 작동되게 하기
     afterLoad: function(origin, destination){
         // destination 매개변수는 해당 섹션에 들어왔을때
         // origin 매개변수는 해당 섹션에서 나갔을 때
@@ -80,7 +89,7 @@ function sec1_in(){
         });
     
         tl.add({
-            delay:1000,
+            delay:500,
             targets: '.g1',
             width : '95%',
         })
@@ -121,5 +130,10 @@ function sec_out(){
         width:0,
     })
 }
+
+
+
+
+
 
 

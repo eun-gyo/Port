@@ -8,13 +8,14 @@ body{
 *{margin: 0;padding: 0;box-sizing: border-box;}
 a{text-decoration: none;}
 li{list-style: none;}
+img{display: block;}
 button{background: none;border: none;cursor: pointer;font-family: "Jua", sans-serif;}
 /* 커서 */
 .cursor{
     position: absolute;
-    width: 50px;
-    height: 50px;
-    background: #FF6813;
+    width: 75px;
+    height: 75px;
+    border: 2px solid #FF6813;
     border-radius: 100%;
     z-index: 10000000;
 }
@@ -379,6 +380,7 @@ header .header_wrap .gnb.on li:hover a{
     text-align: center;
     border-radius: 20px;
     background: #666;
+    cursor: pointer;
 }
 #section2 .sec2_contents .tab_menu ul li a{
     font-size: 24px;
@@ -389,30 +391,124 @@ header .header_wrap .gnb.on li:hover a{
     background: #FF6813;
 }
 
-
-
-/* section3x------------------------------- */
-#section3 .inner div img{
-    width: 1428px;
+/* section3------------------------------- */
+/* 슬라이더 */
+#section3 .slider{
+    width: 1440px;
+    margin-left: 164px;
+    margin-top: 70px;
+    position: relative;
+    /* border: 1px solid red; */
+}
+/* 이전/다음 버튼 */
+#section3 .inner .slider .slick-prev{
+    position: absolute;
+    left: -60px;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 100;
+    cursor: pointer;
+    text-indent: -99999px;
+    width: 45px;
+    height: 89px;
+    background: url('../images/main_visual_prev.png')no-repeat;
+}
+#section3 .inner .slider .slick-next{
+    position: absolute;
+    right: -60px;
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    text-indent: -99999px;
+    width: 45px;
+    height: 90px;
+    background: url('../images/main_visual_next.png')no-repeat;
+}
+/* 공통사항(콘텐츠) */
+#section3 .slider .content{
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+/* 이미지 */
+#section3 .inner .sec3_left_wrap a{
+    display: block;
+    width: 750px;
+    height: 640px;
+}
+/* 설명 텍스트 */
+#section3 .inner .sec3_right_wrap{
+    width: 590px;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    /* border: 1px solid orange; */
+    position: relative;
+}
+/* 설명 */
+#section3 .inner .sec3_right_wrap .script{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 100;
+}
+#section3 .inner .sec3_right_wrap .script li>span{
+    padding: 10px 30px;
+    background: #FF6813;
+    color: #fff;
+    border-radius: 20px;
+}
+/* 넷플릭스 span */
+#section3 .inner .sec3_right_wrap .script li>span.two{
+    padding: 10px 30px;
+    background: #fc3636;
+    color: #fff;
+    border-radius: 20px;
+}
+/* 바로가기 버튼 */
+#section3 .inner .sec3_right_wrap .sec3_btn{
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translateX(-50%);
+    bottom: 200px;
+    width: 530px;
+    display: flex;
+    gap: 36px;
 }
-
-
-
-
-/* section4x------------------------------- */
-#section4 .inner div img{
-    width: 1170px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+#section3 .inner .sec3_right_wrap .sec3_btn>button{
+    color: #fff;
+    background: #FF6813;
+    padding: 12px 48px;
+    border-radius: 25px;
+    font-size: 48px;
 }
+#section3 .inner .sec3_right_wrap .sec3_btn>button:hover{
+    background: #b64b0d;
+}
+#section3 .inner .sec3_right_wrap .sec3_btn>button .fa-arrow-right{
+    margin-left: 10px;
+}
+/* 두번째(넷플릭스)버튼컬러 */
+#section3 .inner .sec3_right_wrap .sec3_btn>.twob{
+    color: #fff;
+    background: #fc3636;
+    padding: 12px 48px;
+    border-radius: 25px;
+    font-size: 48px;
+}
+#section3 .inner .sec3_right_wrap .sec3_btn>.twob:hover{
+    background: #b71717;
+}
+/* section4 ------------------------------- */
+/* web publishing 1 */
 
 
+
+
+/* web publishing 2 */
+/* web publishing 3 */
 
 /* section5---------------------- */
 #section5{
@@ -427,14 +523,18 @@ header .header_wrap .gnb.on li:hover a{
     margin-top: 150px;
     position: relative;
 }
-/* sns links */
 #section5 .inner .footer_info .f_wrap{
     display: flex;
     flex-direction: column;
     gap: 110px;
     color: #fff;
 }
+#section5 .inner .footer_info .f_wrap h4{
+    font-size: 48px;
+    font-weight: 100;
+}
 #section5 .inner .footer_info .f_wrap li a{
+    font-weight: 100;
     font-size: 42px;
     color: #fff;
     transition: all 0.3s ease-in-out;
@@ -443,66 +543,17 @@ header .header_wrap .gnb.on li:hover a{
     color: #FF6813;
     text-decoration: underline;
     margin-bottom: 5px;
-
 }
-#section5 .inner .footer_info .f_wrap li .fa-instagram,
-#section5 .inner .footer_info .f_wrap li .fa-twitter,
-#section5 .inner .footer_info .f_wrap li .fa-blog,
-#section5 .inner .footer_info .f_wrap .f_mailtalk li .fa-envelope{
-    margin-right: 20px;
-    width: 40px;
+#section5 .inner .footer_info .f_wrap .f_mailtalk li .fa-envelope,
+#section5 .inner .footer_info .f_wrap .f_mailtalk li .fa-square-phone{
+    margin-right: 10px;
+    width: 30px;
 }
 /* mail / talk id */
-#section5 .inner .footer_info .f_wrap .f_mailtalk li{
-    font-size: 36px;
-}
+#section5 .inner .footer_info .f_wrap .f_mailtalk li,
 #section5 .inner .footer_info .f_wrap p{
+    font-weight: 100;
     font-size: 28px;
-}
-
-/* work together */
-#section5 .inner .footer_info .f_title h3{
-    text-align: right;
-    font-size: 140px;
-    position: relative;
-}
-#section5 .inner .footer_info .f_title h3 span.o1{
-    color: #fff;
-    position: absolute;
-    right: 160px;
-    top: 0;
-    transform: translateY(-50%);
-    animation: circle_ani2 1.2s ease-in-out infinite;
-}
-#section5 .inner .footer_info .f_title h3 span.o2{
-    color: #fff;
-    position: absolute;
-    left: 82px;
-    top: 50%;
-    transform: translateY(-50%);
-    animation: circle_ani 1.2s ease-in-out infinite;
-}
-#section5 .inner .footer_info .f_title h3 span.o3{
-    color: #fff;
-    position: absolute;
-    right: -60px;
-    top: 50%;
-    transform: translateY(-50%);
-    animation: circle_ani 1.2s ease-in-out infinite;
-}
-@keyframes circle_ani{
-    0%{transform: rotate(0deg);}
-    25%{transform: rotate(45deg);}
-    50%{transform: rotate(0deg);}
-    75%{transform: rotate(-45deg);}
-    100%{transform: rotate(0deg);}
-}
-@keyframes circle_ani2{
-    0%{transform: rotate(0deg);}
-    25%{transform: rotate(-45deg);}
-    50%{transform: rotate(0deg);}
-    75%{transform: rotate(45deg);}
-    100%{transform: rotate(0deg);}
 }
 /* 바로가기 버튼들 */
 #section5 .inner .f_btn_wrap{
@@ -521,6 +572,19 @@ header .header_wrap .gnb.on li:hover a{
     border-radius: 100%;
     background: #fff;
     font-size: 36px;
+    overflow: hidden;
+}
+#section5 .inner .f_btn_wrap button a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 150px;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    color: #121212;
+}
+#section5 .inner .f_btn_wrap button a:hover{
+    transform: scale(1.1);
 }
 
 /* 주메뉴----------------------------- */
