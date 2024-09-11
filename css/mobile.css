@@ -40,22 +40,15 @@
         width: 70%;
     }
     #section0 .title h2{
-        font-size: 64px;
+        font-size: 54px;
     }
     /* 알파벳 I 위에서 뛰는 놈 */
     #section0 .title>span.dot{
-        width: 10px;
-        height: 10px;
-        right: 58px;
-        top: 32px;
-    }
-    @keyframes dot_ani {
-        0%{top: 32px;right:58px;}
-        50%{top: 26px;right: 58px;width: 8px;}
-        100%{top: 32px;right: 58px;}
+        display: none;
     }
     #section0 .title>a span.scroll{
         padding: 10px;
+        font-size: 18px;
         bottom: -140px;
     }
     @keyframes scroll_ani {
@@ -68,7 +61,7 @@
     #section1 .inner .sec1_contents{
         flex-direction: column;
     }
-    /* 왼쪽 프로필박스 */
+    /* 왼(위)쪽 프로필박스 */
     #section1 .inner .left{
         width: 100%;
         height: auto;
@@ -126,7 +119,7 @@
     #section1 .inner .right .experience h3,
     #section1 .inner .right .career h3,
     #section1 .inner .right .skills h3{
-        font-size: 24px;
+        font-size: 20px;
         position: relative;
         margin-bottom: 0;
     }
@@ -156,13 +149,13 @@
     /* career */
     /* 직무 아이콘들 */
     #section1 .inner .right .career>.ezen li:last-child{
-        margin-top: 10px;
+        margin-top: 8px;
     }
     #section1 .inner .right .career>.ezen li span{
         width: 25px;
         height: 25px;
         float: left;
-        margin-right: 10px;
+        margin-right: 4px;
         margin-top: 0;
     }
     #section1 .inner .right .career>.ezen li span img{
@@ -182,7 +175,12 @@
     }
     /* project section2 */
     #section2 .sec2_contents{
-        border: 1px solid red
+        width: 100%;
+        border: 1px solid #fff
+    }
+    /* 그래픽스 갤러리 */
+    #section2 .sec2_contents .tab_content{
+        width: 80%;
     }
 
 
@@ -191,6 +189,13 @@
 
 
 
+
+
+
+    /* 탭 메뉴 */
+    #section2 .sec2_contents .tab_menu{
+        display: none;
+    }
 
 
 
