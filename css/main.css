@@ -334,6 +334,10 @@ header .header_wrap .gnb.on li:hover a{
 #section2 .sec2_contents .tab_content{
     width: 1000px;
 }
+#section2 .sec2_contents .tab_content .box{
+    width: 1000px;
+    height: 100vh;
+}
 /* 처음엔 보이지 않아야 함 */
 #section2 .sec2_contents .tab_content .box2{
     display: none;
