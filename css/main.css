@@ -446,7 +446,6 @@ header .header_wrap .gnb.on li:hover a{
     display: flex;
     flex-direction: column;
     gap: 200px;
-    /* border: 1px solid orange; */
     position: relative;
 }
 /* 설명 */
