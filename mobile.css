@@ -1,0 +1,197 @@
+@charset "utf-8";
+@media ( max-width:767px ){
+    /* 모바일 css */
+    .cursor{
+        display: none;
+    }
+    /* header */
+    header{
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 20px;
+        z-index: 10;
+    }
+    header .header_wrap .gnb,
+    header .header_wrap .gnb.on,
+    header .header_wrap .gnb li a{
+        display: none
+    }
+    header .header_wrap .btn_menu,
+    header .header_wrap .btn_menu.on{
+        width: 36px;
+        height: 30px;
+        top: 24%;
+        background-size: 36px;
+    }
+    #fullpage .section{
+        font-size: 24px;
+        padding: 0 25px;
+    }
+    /* inner h1 */
+    .section .inner h1{
+        font-size: 40px;
+        margin-top: 25px;
+    }
+    /* section0 -- 표지 */
+    #section0 .title{
+        width: 70%;
+    }
+    #section0 .title h2{
+        font-size: 64px;
+    }
+    /* 알파벳 I 위에서 뛰는 놈 */
+    #section0 .title>span.dot{
+        width: 10px;
+        height: 10px;
+        right: 58px;
+        top: 32px;
+    }
+    @keyframes dot_ani {
+        0%{top: 32px;right:58px;}
+        50%{top: 26px;right: 58px;width: 8px;}
+        100%{top: 32px;right: 58px;}
+    }
+    #section0 .title>a span.scroll{
+        padding: 10px;
+        bottom: -140px;
+    }
+    @keyframes scroll_ani {
+        0%{bottom: -140px;}
+        50%{bottom: -180px;}
+        100%{bottom: -140px;}
+    }
+    /* about section1 */
+    /* 전체 컨텐츠박스 */
+    #section1 .inner .sec1_contents{
+        flex-direction: column;
+    }
+    /* 왼쪽 프로필박스 */
+    #section1 .inner .left{
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 40px 0 ;
+        border-bottom: 2px solid #FF6813;
+    }
+    #section1 .inner .left .photo{
+        width: 100px;
+        height: 125px;
+    }
+    #section1 .inner .left .photo img{
+        border-radius: 20px;
+    }
+    /* 왼쪽 소개박스 */
+    #section1 .inner .left .contact{
+        width: 50%;
+        height: 20%;
+        text-align: center;
+        margin: 0;
+    }
+    #section1 .inner .left .contact li{
+        font-size: 16px;
+        font-weight: 100;
+    }
+    #section1 .inner .left .contact li .fa-user,
+    #section1 .inner .left .contact li .fa-cake-candles,
+    #section1 .inner .left .contact li .fa-phone,
+    #section1 .inner .left .contact li .fa-envelope{
+        width: 18px;
+        margin-right: 5px;
+    }
+    /* 오른쪽 설명박스 */
+    #section1 .inner .right{
+        width: 100%;
+    }
+    /* skill제외 원버튼으로 축소 후 팝업으로 보여주기 */
+    #section1 .inner .right .experience{
+        border-right: 2px solid #FF6813;
+    }
+    #section1 .inner .right .experience,
+    #section1 .inner .right .career{
+        width: 50%;
+        padding: 20px;
+        border-left: none;
+        border-bottom: none;
+    }
+    #section1 .inner .right .skills{
+        width: 100%;
+        padding: 20px;
+        border-top: 2px solid #FF6813;
+        border-left: none;
+    }
+    /* 셋다 h3 */
+    #section1 .inner .right .experience h3,
+    #section1 .inner .right .career h3,
+    #section1 .inner .right .skills h3{
+        font-size: 24px;
+        position: relative;
+        margin-bottom: 0;
+    }
+    #section1 .inner .right .experience h3::before,
+    #section1 .inner .right .career h3::before,
+    #section1 .inner .right .skills h3::before{
+        content: '+';
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    /* 경험칸 글씨들 */
+    #section1 .inner .right .ezen li{
+        font-size: 14px;
+        display: none;
+    }
+    #section1 .inner .right .experience li:nth-child(2),
+    #section1 .inner .right .experience li:nth-child(4),
+    #section1 .inner .right .experience li:last-child{
+        font-family: 'Noto Sans',sans-serif;
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+    #section1 .inner .right ul{
+        margin-top: 8px;
+    }
+    /* career */
+    /* 직무 아이콘들 */
+    #section1 .inner .right .career>.ezen li:last-child{
+        margin-top: 10px;
+    }
+    #section1 .inner .right .career>.ezen li span{
+        width: 25px;
+        height: 25px;
+        float: left;
+        margin-right: 10px;
+        margin-top: 0;
+    }
+    #section1 .inner .right .career>.ezen li span img{
+        object-fit: contain
+    }
+    /* skills */
+    /* 그래프 각 하나당 */
+    #section1 .inner .right .skills .subjects li{
+        font-size: 20px;
+        padding: 0 10px;
+        gap: 5%;
+    }
+    /* 항목이름들 */
+    #section1 .inner .right .skills .subjects li .title{
+        text-align: left;
+        width: auto;
+    }
+    /* project section2 */
+    #section2 .sec2_contents{
+        border: 1px solid red
+    }
+
+
+
+
+
+
+
+
+
+
+};
