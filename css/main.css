@@ -187,7 +187,7 @@ header .header_wrap .gnb.on li:hover a{
     text-align: center;
 }
 #section1 .inner .left .photo{
-    width: 320px;
+    width: 256px;
     height: 320px;
     border-radius: 30px;
     margin: 0 auto;
@@ -243,6 +243,7 @@ header .header_wrap .gnb.on li:hover a{
     font-size: 40px;
     margin-bottom: 20px;
 }
+/* 경험칸 글씨들 */
 #section1 .inner .right .ezen li{
     display: flex;
     flex-direction: column;
@@ -433,7 +434,7 @@ header .header_wrap .gnb.on li:hover a{
 /* 이미지 */
 #section3 .inner .sec3_left_wrap a{
     display: block;
-    width: 750px;
+    width: 740px;
     height: 640px;
 }
 /* 설명 텍스트 */
