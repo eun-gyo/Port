@@ -175,15 +175,33 @@
     }
     /* project section2 */
     #section2 .sec2_contents{
-        width: 100%;
-        border: 1px solid #fff
+        width: 90%;
+        height: 100vh;
+        flex-direction: column;
     }
     /* 그래픽스 갤러리 */
     #section2 .sec2_contents .tab_content{
-        width: 80%;
+        width: calc( 100% - 50px );
+        height: auto;
     }
-
-
+    /* 두개 탭 */
+    #section2 .sec2_contents .tab_content .graphic,
+    #section2 .sec2_contents .tab_content .web{
+        width: 95%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* border: 1px solid #fff; */
+    }
+    /* 칸마다 */
+    #section2 .sec2_contents .tab_content .graphic li,
+    #section2 .sec2_contents .tab_content .web li{
+        width: 45%;
+        height: 120px;
+    }
 
 
 
@@ -194,8 +212,30 @@
 
     /* 탭 메뉴 */
     #section2 .sec2_contents .tab_menu{
-        display: none;
+        width: 100%;
     }
+    #section2 .sec2_contents .tab_menu ul{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    #section2 .sec2_contents .tab_menu ul li{
+        width: 100px;
+        border-radius: 10px;
+    }
+    #section2 .sec2_contents .tab_menu ul li a{
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 80px;
+        color: #fff;
+    }
+
+
+
+
+
+
+
 
 
 

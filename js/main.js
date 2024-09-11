@@ -65,7 +65,7 @@ new fullpage('#fullpage', {
     // 네비게이터 위치
     navigationPosition: 'right',
     // 하이퍼링크
-    anchors:['num0','num1','num2','num3','num4','num41','num42','num5'],
+    anchors:['num0','num1','num2','num3','num4','num41','num5'],
 
 
     // 화면안에 들어왔을때 작동되게 하기
