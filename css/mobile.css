@@ -1,8 +1,5 @@
 @charset "utf-8";
-body{
-
-}
-@media ( max-width:767px ) and ( min-width: 450px ){
+@media ( max-width:767px ){
     /* 모바일 css */
     .cursor{
         display: none;
