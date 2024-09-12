@@ -536,17 +536,6 @@ header .header_wrap .gnb.on li:hover a{
     font-size: 48px;
     font-weight: 100;
 }
-#section5 .inner .footer_info .f_wrap li a{
-    font-weight: 100;
-    font-size: 42px;
-    color: #fff;
-    transition: all 0.3s ease-in-out;
-}
-#section5 .inner .footer_info .f_wrap li:hover a{
-    color: #FF6813;
-    text-decoration: underline;
-    margin-bottom: 5px;
-}
 #section5 .inner .footer_info .f_wrap .f_mailtalk li .fa-envelope,
 #section5 .inner .footer_info .f_wrap .f_mailtalk li .fa-square-phone{
     margin-right: 10px;
@@ -568,6 +557,12 @@ header .header_wrap .gnb.on li:hover a{
     display: flex;
     gap: 30px;
     justify-content: flex-end;
+}
+#section5 .inner .f_btn_wrap::before{
+    content: 'Quick Button';
+    position: absolute;
+    left: 150px;
+    top: -100px;
 }
 #section5 .inner .f_btn_wrap button{
     width: 150px;

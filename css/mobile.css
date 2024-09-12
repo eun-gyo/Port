@@ -206,6 +206,7 @@
     /* 탭 메뉴 */
     #section2 .sec2_contents .tab_menu{
         width: 100%;
+        margin-top: 100px;
     }
     #section2 .sec2_contents .tab_menu ul{
         display: flex;
@@ -213,7 +214,6 @@
         gap: 20px;
     }
     #section2 .sec2_contents .tab_menu ul li{
-        width: 40%;
         border-radius: 10px;
     }
     #section2 .sec2_contents .tab_menu ul li a{
@@ -311,6 +311,53 @@
     /* web publishing section4 아직 안함 */
 
 
-    
+    /* contact section5 */
+    /* 전체 박스 */
+    #section5 .inner .footer_info{
+        width: 100%;
+        flex-direction: column;
+    }
+    #section5 .inner .footer_info .f_wrap{
+        width: 95%;
+        text-align: center;
+        gap: 40px;
+        margin: 0 auto;
+    }
+    #section5 .inner .footer_info .f_wrap h4{
+        font-size: 28px;
+    }
+    /* mail / talk id */
+    #section5 .inner .footer_info .f_wrap .f_mailtalk li,
+    #section5 .inner .footer_info .f_wrap p{
+        font-weight: 100;
+        font-size: 18px;
+    }
+
+
+    /* 바로가기 버튼들 */
+    #section5 .inner .f_btn_wrap{
+        bottom: -200px;
+        width: 100%;
+        text-align: center;
+        gap: 20px;
+        justify-content: center;
+    }
+    #section5 .inner .f_btn_wrap::before{
+        content: 'Quick Button';
+        position: absolute;
+        left: 40px;
+        top: -40px;
+    }
+    #section5 .inner .f_btn_wrap button{
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        background: #fff;
+        font-size: 18px;
+        overflow: hidden;
+    }
+    #section5 .inner .f_btn_wrap button a{
+        line-height: 70px;
+    }
 
 };
