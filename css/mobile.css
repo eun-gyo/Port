@@ -4,6 +4,77 @@
     .cursor{
         display: none;
     }
+    /* 모바일 탭메뉴 */
+    .m_cover{
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        z-index: 500;
+    }
+    .m_gnb{
+        display: block;
+        position: fixed;
+        right: -900px;
+        top: 0;
+        width: 80%;
+        height: 100%;
+        background: #FF6813;
+        z-index: 900;
+        padding: 50px 0;
+        transition: all 0.5s ease-in-out;
+    }
+    .m_gnb.on{
+        display: block;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100%;
+        background: #FF6813;
+        z-index: 900;
+        padding: 50px 0;
+        transition: all 0.5s ease-in-out;
+    }
+    .m_gnb .m_close{
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        width: 36px;
+        height: 36px;
+        font-size: 36px;
+        color: #fff;
+    }
+    .m_gnb .m_close:hover{
+        color: #121212;
+    }
+    .m_gnb ul.m_gnb_tab{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .m_gnb ul.m_gnb_tab li{
+        width: 100%;
+        height: 40px;
+        text-align: center;
+    }
+    .m_gnb ul.m_gnb_tab li a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 40px;
+        color: #fff;
+        font-size: 24px;
+    }
+    .m_gnb ul.m_gnb_tab li:hover{
+        background: #fff;
+    }
+    .m_gnb ul.m_gnb_tab li:hover a{
+        color: #121212;
+    }
     /* header */
     header{
         width: 100%;
@@ -175,38 +246,42 @@
     }
     /* project section2 */
     #section2 .sec2_contents{
-        width: 95%;
-        height: 100vh;
+        width: 80%;
         flex-direction: column;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100px;
+        margin: 0 auto;
+        gap: 60px;
     }
     /* 그래픽스 갤러리 */
     #section2 .sec2_contents .tab_content{
-        width: 95%;
+        width: 100%;
+        height: 400px;
     }
     #section2 .sec2_contents .tab_content .box{
-        width: 95%;
-        height: 100px;
+        width: 100%;
+        height: 400px;
     }
     /* 두개 탭 */
     #section2 .sec2_contents .tab_content .graphic,
     #section2 .sec2_contents .tab_content .web{
-        width: 95%;
-        position: absolute;
-        left: 0;
-        top: 0;
+        width: 100%;
+        height: 400px;
         display: flex;
+        gap: 5%;
         flex-wrap: wrap;
     }
     /* 칸마다 */
     #section2 .sec2_contents .tab_content .graphic li,
     #section2 .sec2_contents .tab_content .web li{
-        width: 40%;
+        width: 45%;
         height: 120px;
     }
     /* 탭 메뉴 */
     #section2 .sec2_contents .tab_menu{
         width: 100%;
-        margin-top: 100px;
     }
     #section2 .sec2_contents .tab_menu ul{
         display: flex;
@@ -226,7 +301,7 @@
     /* 슬라이더 */
     #section3 .slider{
         width: 100%;
-        height: 100vh;
+        height: 100%;
         padding: 0 20px;
         margin-left: 0;
         position: relative;
@@ -306,8 +381,6 @@
         border-radius: 10px;
         font-size: 16px;
     }
-
-
     /* web publishing section4 아직 안함 */
 
 

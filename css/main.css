@@ -19,6 +19,10 @@ button{background: none;border: none;cursor: pointer;font-family: "Jua", sans-se
     border-radius: 100%;
     z-index: 100000;
 }
+/* 모바일탭메뉴 및 커버 */
+.m_cover,.m_gnb,.m_gnb.on{
+    display: none;
+}
 header{
     width: 100%;
     height: 150px;
@@ -46,7 +50,7 @@ header .header_wrap .btn_menu{
     background: url('../images/logo.png')no-repeat;
     background-size: 48px;
     position: absolute;
-    right: 50px;
+    right: 40px;
     top: 38%;
     transform: translateY(-50%);
     transition: all 0.2s ease-in-out;
@@ -329,6 +333,11 @@ header .header_wrap .gnb.on li:hover a{
     justify-content: center;
     gap: 20px;
     position: relative;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+#section2 .sec2_contents.on{
+    opacity: 1;
 }
 /* 그래픽스 갤러리 */
 #section2 .sec2_contents .tab_content{
@@ -336,7 +345,7 @@ header .header_wrap .gnb.on li:hover a{
 }
 #section2 .sec2_contents .tab_content .box{
     width: 1000px;
-    height: 100vh;
+    height: 660px;
 }
 /* 처음엔 보이지 않아야 함 */
 #section2 .sec2_contents .tab_content .box2{
@@ -345,9 +354,6 @@ header .header_wrap .gnb.on li:hover a{
 #section2 .sec2_contents .tab_content .graphic,
 #section2 .sec2_contents .tab_content .web{
     width: 1000px;
-    position: absolute;
-    left: 0;
-    top: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -385,6 +391,7 @@ header .header_wrap .gnb.on li:hover a{
     border-radius: 20px;
     background: #666;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 #section2 .sec2_contents .tab_menu ul li a{
     font-size: 24px;
@@ -504,14 +511,89 @@ header .header_wrap .gnb.on li:hover a{
 #section3 .inner .sec3_right_wrap .sec3_btn>.twob:hover{
     background: #b71717;
 }
-/* section4 ------------------------------- */
+/* section4,41 ------------------------------- */
 /* web publishing 1 */
-
-
-
-
 /* web publishing 2 */
-/* web publishing 3 */
+/* #section4 .inner .publish,
+#section41 .inner .publish{
+    height: 80%;
+} */
+/* 왼쪽 이미지 레이아웃 */
+#section4 .inner .publish .web_left,
+#section41 .inner .publish .web_left{
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+    height: 60%;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+/* 왼쪽 이미지 레이아웃 on */
+#section4 .inner .publish.on .web_left,
+#section41 .inner .publish.on .web_left{
+    left: 360px;
+    opacity: 1;
+}
+/* pc ul */
+#section4 .inner .publish .web_left ul.ptm,
+#section41 .inner .publish .web_left ul.ptm{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+#section4 .inner .publish .web_left ul.ptm>li,
+#section41 .inner .publish .web_left ul.ptm>li{
+    height: 50%;
+    border: 1px solid #fff;
+}
+/* tablet, mobile ul */
+#section4 .inner .publish .web_left ul.ptm>li ul.tm,
+#section41 .inner .publish .web_left ul.ptm>li ul.tm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 5%;
+}
+#section4 .inner .publish .web_left ul.ptm>li ul.tm>li:first-child,
+#section41 .inner .publish .web_left ul.ptm>li ul.tm>li:first-child{
+    width: 100%;
+    border: 2px solid #666;
+}
+#section4 .inner .publish .web_left ul.ptm>li:last-child ul.tm>li:last-child,
+#section41 .inner .publish .web_left ul.ptm>li:last-child ul.tm>li:last-child{
+    width: 40%;
+    border: 1px solid #666;
+}
+/* 오른쪽 프로젝트 설명란 */
+#section4 .inner .publish .web_script,
+#section41 .inner .publish .web_script{
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+    height: 60%;
+    padding: 20px;
+    border: 2px solid #FF6813;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+/* 오른쪽 프로젝트 설명란 on */
+#section4 .inner .publish.on .web_script,
+#section41 .inner .publish.on .web_script{
+    right: 360px;
+    opacity: 1;
+}
+
+
+
+
+
+
 
 /* section5---------------------- */
 #section5{

@@ -10,6 +10,21 @@ document.addEventListener('mousemove', (e) => {
 
 // gnb 로고 액팅
 $(function(){
+
+    // m 탭메뉴
+    $('.btn_menu').on('click',function(){
+        $('.m_gnb').addClass('on')
+        $('.m_cover').fadeIn()
+    })
+    $('.m_cover').on('click',function(){
+        $('.m_gnb').removeClass('on')
+        $('.m_cover').fadeOut()
+    })
+    $('.m_close').on('click',function(){
+        $('.m_gnb').removeClass('on')
+        $('.m_cover').fadeOut()
+    })
+
     // 로고 클릭시 토글
     $('.btn_menu').on('click',function(){
         $('.gnb').toggleClass('on')
@@ -52,6 +67,9 @@ $(function(){
         $('#section1 .inner .right .skills ul li').stop().fadeToggle()
     })
 
+    
+
+    
 })
 
 // 전체 페이지 액팅
@@ -78,16 +96,26 @@ new fullpage('#fullpage', {
 
         // using index
         if(destination.index == 0 ){
-            sec_out()
+            sec1_out()
         }if(destination.index == 1 ){
-            sec1_in()
+            sec1_in(),
+            sec2_out()
         }if(destination.index == 2 ){
-            sec_out()
+            sec1_out(),
+            sec2_in()
         }if(destination.index == 3 ){
-            
+            sec2_out(),
+            sec4_out()
         }if(destination.index == 4 ){
-            
+            sec4_in(),
+            sec41_out()
+        }if(destination.index == 5 ){
+            sec41_in(),
+            sec4_out()
+        }if(destination.index == 6 ){
+            sec41_out()
         }
+
     }
 });
 
@@ -138,15 +166,34 @@ function sec1_in(){
     
 }
 // about화면을 벗어나면 그래프 게이지 가로 0
-function sec_out(){
+function sec1_out(){
     anime({
         targets:'.gazeins',
         width:0,
     })
 }
+// sec2 in
+function sec2_in(){
+    $('#section2 .sec2_contents').addClass('on')
+}
+function sec2_out(){
+    $('#section2 .sec2_contents').removeClass('on')
+}
 
-
-
+// sec4,41
+// 액팅
+function sec4_in(){
+    $('#section4 .inner .publish').addClass('on');
+}
+function sec4_out(){
+    $('#section4 .inner .publish').removeClass('on');
+}
+function sec41_in(){
+    $('#section41 .inner .publish').addClass('on');
+}
+function sec41_out(){
+    $('#section41 .inner .publish').removeClass('on');
+}
 
 
 
