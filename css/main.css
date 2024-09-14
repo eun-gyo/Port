@@ -514,12 +514,12 @@ header .header_wrap .gnb.on li:hover a{
 }
 /* section4,41 ------------------------------- */
 /* web publishing 1 */
-/* web publishing 2 */
+
 /* #section4 .inner .publish,
 #section41 .inner .publish{
     height: 80%;
 } */
-/* 왼쪽 이미지 레이아웃 */
+/* 왼쪽 이미지 레이아웃 공통 */
 #section4 .inner .publish .web_left,
 #section41 .inner .publish .web_left{
     position: absolute;
@@ -531,45 +531,47 @@ header .header_wrap .gnb.on li:hover a{
     transition: all 0.4s ease-in-out;
     opacity: 0;
 }
-/* 왼쪽 이미지 레이아웃 on */
+/* 왼쪽 이미지 레이아웃 on 공통 */
 #section4 .inner .publish.on .web_left,
 #section41 .inner .publish.on .web_left{
     left: 360px;
     opacity: 1;
 }
 /* pc ul */
-#section4 .inner .publish .web_left ul.ptm,
-#section41 .inner .publish .web_left ul.ptm{
+#section4 .inner .publish .web_left ul.ptm{
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
     text-align: center;
 }
-#section4 .inner .publish .web_left ul.ptm>li,
-#section41 .inner .publish .web_left ul.ptm>li{
+#section4 .inner .publish .web_left ul.ptm>li{
     height: 50%;
-    border: 1px solid #fff;
 }
-/* tablet, mobile ul */
-#section4 .inner .publish .web_left ul.ptm>li ul.tm,
-#section41 .inner .publish .web_left ul.ptm>li ul.tm{
+/* 이미지박스 크기 */
+#section4 .inner .publish.on .web_left ul.ptm>li .imgbox{
+    width: 572px;
+    height: 272px;
+    overflow: hidden;
+    position: relative;
+}
+#section4 .inner .publish .web_left ul.ptm>li .imgbox img{
     width: 100%;
-    height: 100%;
-    display: flex;
-    gap: 5%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scale(1);
+    transition: all 1s ease-in-out;
 }
-#section4 .inner .publish .web_left ul.ptm>li ul.tm>li:first-child,
-#section41 .inner .publish .web_left ul.ptm>li ul.tm>li:first-child{
-    width: 100%;
-    border: 2px solid #666;
+/* 애니메이션주기 */
+#section4 .inner .publish .web_left ul.ptm>li .imgbox:hover img{
+    top: -400px;
 }
-#section4 .inner .publish .web_left ul.ptm>li:last-child ul.tm>li:last-child,
-#section41 .inner .publish .web_left ul.ptm>li:last-child ul.tm>li:last-child{
-    width: 40%;
-    border: 1px solid #666;
+#section4 .inner .publish .web_left ul.ptm>li:last-child .imgbox:hover img{
+    top: 0;
+    transform: scale(1.05);
 }
-/* 오른쪽 프로젝트 설명란 */
+/* 오른쪽 프로젝트 설명란- 공통 ------- */
 #section4 .inner .publish .web_script,
 #section41 .inner .publish .web_script{
     position: absolute;
@@ -583,18 +585,64 @@ header .header_wrap .gnb.on li:hover a{
     opacity: 0;
     transition: all 0.4s ease-in-out;
 }
-/* 오른쪽 프로젝트 설명란 on */
+/* 오른쪽 프로젝트 설명란 on 공통 */
 #section4 .inner .publish.on .web_script,
 #section41 .inner .publish.on .web_script{
     right: 360px;
     opacity: 1;
 }
+/* 글 폰트 크기 공통 */
+#section4 .inner .publish .web_script ul li,
+#section41 .inner .publish .web_script ul li{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 100;
+}
+#section4 .inner .publish .web_script a,
+#section41 .inner .publish .web_script a{
+    background: #FF6813;
+    color: #fff;
+    font-weight: 200;
+    font-size: 28px;
+    padding: 10px 30px;
+    position: absolute;
+    left: 20px;
+    bottom: 20%;
+}
+/* web publishing 2 */
+#section41 .inner .publish .web_left ul.ptm{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+#section41 .inner .publish .web_left ul.ptm>li{
+    width: 50%;
+    height: 100%;
+}
+#section41 .inner .publish .web_left ul.ptm>li .imgbox{
+    width: 100%;
+    height: 562.5px;
+    overflow: hidden;
+    position: relative;
+}
+#section41 .inner .publish .web_left ul.ptm>li .imgbox img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s ease-in-out;
+}
+/* 모바일 */
 
-
-
-
-
-
+#section41 .inner .publish .web_left ul.ptm>li:last-child .imgbox img{
+    transition: all 4s ease-in-out;
+}
+#section41 .inner .publish .web_left ul.ptm>li .imgbox:hover img{
+    top: -270px;
+}
+#section41 .inner .publish .web_left ul.ptm>li:last-child .imgbox:hover img{
+    top: -2950px;
+}
 
 /* section5---------------------- */
 #section5{

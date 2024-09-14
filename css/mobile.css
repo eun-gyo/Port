@@ -225,22 +225,16 @@
         gap: 10px;
         font-size: 12px;
     }
-    /* career */
-    /* 직무 아이콘들 */
-    #section1 .inner .right .career>.ezen li:last-child{
-        margin-top: 8px;
-    }
-    #section1 .inner .right .career>.ezen li span{
-        width: 25px;
-        height: 25px;
-        margin-right: 2px;
-        margin-top: 0;
-    }
-    #section1 .inner .right .career>.ezen li span:last-child{
+    #section1 .inner .right .career>.ezen li{
         display: none;
     }
-    #section1 .inner .right .career>.ezen li span img{
-        object-fit: contain
+    /* 직무 아이콘들 */
+    #section1 .inner .right .career>.ezen li:last-child{
+        margin-top: 0;
+        display: flex;
+    }
+    #section1 .inner .right .career>.ezen li:last-child span{
+        display: none;
     }
     /* skills */
     /* 그래프 각 하나당 */
@@ -391,8 +385,106 @@
         border-radius: 10px;
         font-size: 16px;
     }
-    /* web publishing section4 아직 안함 */
-
+    /* web publishing section4 */
+    /* 이미지 레이아웃 */
+    #section4 .inner .publish .web_left,
+    #section41 .inner .publish .web_left{
+        left: -50%;
+        top: 40%;
+        width: 80%;
+        height: 50%;
+    }
+    /* 왼쪽 이미지 레이아웃 on */
+    #section4 .inner .publish.on .web_left,
+    #section41 .inner .publish.on .web_left{
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%,-50%);
+        opacity: 1;
+    }
+    #section4 .inner .publish .web_left ul.ptm{
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+        text-align: center;
+    }
+    #section4 .inner .publish .web_left ul.ptm>li{
+        height: 50%;
+    }
+    /* 이미지박스 크기 */
+    #section4 .inner .publish.on .web_left ul.ptm>li .imgbox{
+        width: 100%;
+        height: 100%;
+    }
+    #section4 .inner .publish .web_left ul.ptm>li .imgbox:hover img{
+        top: 0;
+    }
+    #section4 .inner .publish .web_left ul.ptm>li:last-child .imgbox:hover img{
+        top: 0;
+        transform: none;
+    }
+    /* 오른쪽 프로젝트 설명란 */
+    #section4 .inner .publish .web_script,
+    #section41 .inner .publish .web_script{
+        position: absolute;
+        right: -145%;
+        top: 77%;
+        transform: translate(-50%,-50%);
+        width: 80%;
+        height: 20%;
+        padding: 10px 20px;
+    }
+    /* 오른쪽 프로젝트 설명란 on */
+    #section4 .inner .publish.on .web_script,
+    #section41 .inner .publish.on .web_script{
+        right: -30%;
+        top: 77%;
+        transform: translate(-50%,-50%);
+    }
+    /* 글 폰트 크기 공통 */
+    #section4 .inner .publish .web_script ul li,
+    #section41 .inner .publish .web_script ul li{
+        font-size: 16px;
+        color: #fff;
+        font-weight: 100;
+    }
+    #section4 .inner .publish .web_script a,
+    #section41 .inner .publish .web_script a{
+        background: #FF6813;
+        color: #fff;
+        font-weight: 200;
+        font-size: 14px;
+        padding: 5px 15px;
+        position: absolute;
+        left: 20px;
+        bottom: 10px;
+    }
+    /* section41 publishing2 */
+    /* pc, mobile ul */
+    #section41 .inner .publish .web_left ul.ptm{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 20px;
+    }
+    #section41 .inner .publish .web_left ul.ptm>li{
+        width: 50%;
+        height: 100%;
+    }
+    #section41 .inner .publish .web_left ul.ptm>li .imgbox{
+        width: 100%;
+        /* width: 154px; */
+        height: 443px;
+        overflow: hidden;
+    }
+    #section41 .inner .publish .web_left ul.ptm>li .imgbox img{
+        width: 100%;
+    }
+    /* 애니메이션 x */
+    #section41 .inner .publish .web_left ul.ptm>li .imgbox:hover img,
+    #section41 .inner .publish .web_left ul.ptm>li:last-child .imgbox:hover img{
+        top: 0;
+    }
 
     /* contact section5 */
     /* 전체 박스 */
