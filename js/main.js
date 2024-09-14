@@ -56,15 +56,15 @@ $(function(){
     // sec1 mobile일때 아코디언
     $('#section1 .inner .right .experience').on('click',function(){
         $('#section1 .inner .right .experience').toggleClass('on')
-        $('#section1 .inner .right .experience ul li').stop().fadeToggle()
+        $('#section1 .inner .right .experience ul').stop().fadeToggle()
     })
     $('#section1 .inner .right .career').on('click',function(){
         $('#section1 .inner .right .career').toggleClass('on')
-        $('#section1 .inner .right .career ul li').stop().fadeToggle()
+        $('#section1 .inner .right .career ul').stop().fadeToggle()
     })
     $('#section1 .inner .right .skills').on('click',function(){
         $('#section1 .inner .right .skills').toggleClass('on')
-        $('#section1 .inner .right .skills ul li').stop().fadeToggle()
+        $('#section1 .inner .right .skills ul').stop().fadeToggle()
     })
 
     
