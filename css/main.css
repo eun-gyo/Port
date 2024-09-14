@@ -238,7 +238,7 @@ header .header_wrap .gnb.on li:hover a{
 #section1 .inner .right .career,
 #section1 .inner .right .skills{
     width: 100%;
-    padding: 30px;
+    padding: 10px 30px;
     border-left: 2px solid #FF6813;
 }
 #section1 .inner .right .experience h3,
@@ -256,6 +256,7 @@ header .header_wrap .gnb.on li:hover a{
 }
 #section1 .inner .right .experience li:nth-child(2),
 #section1 .inner .right .experience li:nth-child(4),
+#section1 .inner .right .experience li:nth-child(6),
 #section1 .inner .right .experience li:last-child{
     font-family: 'Noto Sans',sans-serif;
     font-size: 18px;

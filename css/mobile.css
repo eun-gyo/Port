@@ -169,6 +169,9 @@
     #section1 .inner .right{
         width: 100%;
     }
+    #section1 .inner .right ul{
+        margin-top: 8px;
+    }
     /* skill제외 원버튼으로 축소 후 팝업으로 보여주기 */
     #section1 .inner .right .experience{
         border-right: 2px solid #FF6813;
@@ -209,13 +212,18 @@
     }
     #section1 .inner .right .experience li:nth-child(2),
     #section1 .inner .right .experience li:nth-child(4),
+    #section1 .inner .right .experience li:nth-child(6),
     #section1 .inner .right .experience li:last-child{
         font-family: 'Noto Sans',sans-serif;
         font-size: 12px;
         margin-bottom: 14px;
     }
-    #section1 .inner .right ul{
-        margin-top: 8px;
+    /* career */
+    #section1 .inner .right .career li{
+        display:flex;
+        flex-direction: row;
+        gap: 10px;
+        font-size: 12px;
     }
     /* career */
     /* 직무 아이콘들 */
@@ -225,9 +233,11 @@
     #section1 .inner .right .career>.ezen li span{
         width: 25px;
         height: 25px;
-        float: left;
-        margin-right: 4px;
+        margin-right: 2px;
         margin-top: 0;
+    }
+    #section1 .inner .right .career>.ezen li span:last-child{
+        display: none;
     }
     #section1 .inner .right .career>.ezen li span img{
         object-fit: contain
