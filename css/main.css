@@ -598,16 +598,18 @@ header .header_wrap .gnb.on li:hover a{
     color: #fff;
     font-weight: 100;
 }
-#section4 .inner .publish .web_script a,
-#section41 .inner .publish .web_script a{
+/* 바로가기 버튼 */
+#section4 .inner .publish .web_script ul li:last-child,
+#section41 .inner .publish .web_script ul li:last-child{
+    margin-top: 20px;
+}
+#section4 .inner .publish .web_script ul li:last-child a,
+#section41 .inner .publish .web_script ul li:last-child a{
     background: #FF6813;
     color: #fff;
     font-weight: 200;
     font-size: 28px;
     padding: 10px 30px;
-    position: absolute;
-    left: 20px;
-    bottom: 20%;
 }
 /* web publishing 2 */
 #section41 .inner .publish .web_left ul.ptm{
@@ -632,8 +634,7 @@ header .header_wrap .gnb.on li:hover a{
     top: 0;
     transition: all 1s ease-in-out;
 }
-/* 모바일 */
-
+/* 모바일이미지 */
 #section41 .inner .publish .web_left ul.ptm>li:last-child .imgbox img{
     transition: all 4s ease-in-out;
 }
