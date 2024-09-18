@@ -330,7 +330,7 @@ header .header_wrap .gnb.on li:hover a{
 #section2 .sec2_contents{
     width: 1200px;
     display: flex;
-    margin: 100px auto 0;
+    margin: 50px auto 0;
     justify-content: center;
     gap: 20px;
     position: relative;
