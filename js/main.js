@@ -1,13 +1,15 @@
 // 마우스 따라다니는 원
-document.addEventListener('mousemove', (e) => {
-    let mouseX = e.pageX - 2; // document의 x좌표값
-    let mouseY = e.pageY - 3; // document의 y좌표값
+// document.addEventListener('mousemove', (e) => {
+//     let mouseX = e.pageX - 2; // document의 x좌표값
+//     let mouseY = e.pageY - 3; // document의 y좌표값
 
-    let cursor = document.querySelector('.cursor');
-    cursor.style.left = mouseX + 'px';
-    cursor.style.top = mouseY + 'px';
-})
+//     let cursor = document.querySelector('.cursor');
+//     cursor.style.left = mouseX + 'px';
+//     cursor.style.top = mouseY + 'px';
+// })
 
+
+alert("해당 페이지는 PC 또는 모바일에 최적화 되어있습니다")
 // gnb 로고 액팅
 $(function(){
 
@@ -133,11 +135,11 @@ function sec1_in(){
         tl.add({
             delay:500,
             targets: '.g1',
-            width : '95%',
+            width : '90%',
         })
         .add({
             targets: '.g2',
-            width : '95%',
+            width : '90%',
         })
         .add({
             targets: '.g3',
@@ -145,11 +147,11 @@ function sec1_in(){
         })
         .add({
             targets: '.g4',
-            width : '95%',
+            width : '90%',
         })
         .add({
             targets: '.g5',
-            width : '95%',
+            width : '90%',
         })
         .add({
             targets: '.g6',
